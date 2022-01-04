@@ -76,7 +76,6 @@ const defaultUnique = true;
 		(new MutationObserver((mutations) => {
 			for (m of mutations) {
 				m.addedNodes.forEach(e => {
-					const aa = e.getElementsByTagName('a');
 					addAnchors(e);
 				});
 			}
