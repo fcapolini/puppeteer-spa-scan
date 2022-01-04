@@ -34,9 +34,9 @@ const defaultUnique = true;
 		}
 	});
 
-    page.on('dialog', async dialog => {
-        await dialog.dismiss();
-    });
+	page.on('dialog', async dialog => {
+		await dialog.dismiss();
+	});
 
 	page.on('console', async (msg) => {
 		console.log(`${msg.type()}: ${msg.text()}`);
@@ -88,11 +88,11 @@ const defaultUnique = true;
 		clickNextAnchor();
 	});
 
-    while (!done) {
-        await page.waitForTimeout(1000);
-    }
+	while (!done) {
+		await page.waitForTimeout(1000);
+	}
 
-    await browser.close();
+	await browser.close();
 
 	fs.writeFileSync(outputName, JSON.stringify(results));
 })();
