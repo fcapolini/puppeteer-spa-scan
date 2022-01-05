@@ -1,6 +1,6 @@
 # puppeteer-spa-scan
 
-Collects network requests issued by a Single Page Application in a JSON file.
+Collects network requests issued by a Single Page Application in a JSON file. Simplistic implementation.
 
 Installation
 
